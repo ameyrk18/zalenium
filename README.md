@@ -73,7 +73,8 @@ started, please join the #zalenium channel on [Slack](https://seleniumhq.herokua
 
 #### Run it
 * Zalenium uses docker to scale on-demand, therefore we need to give it the `docker.sock` full access, this is known as
-"Docker alongside docker".
+"Docker alongside docker". Please note, this container needs to be started by a non root user otherwise fails with zalenium    | Error: The Grid is not listening at port 4444 error message. 
+
 
   ```sh
    # Pull docker-selenium
